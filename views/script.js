@@ -13,8 +13,8 @@ $(document).ready(function(){
       res.words.map(function(word,i) {
         if( i === res.words.length - 1){
           var newForm = `<fieldset>
-          <h2 class="fs-title">Questions for ${word}</h2>
-          <h3 class="fs-subtitle">This is step 1</h3>
+          <h2 class="fs-title">Questions for ${word.toLowerCase()}</h2>
+
             <input class='check' type="checkbox"><p>Please document the exact plating procedure</p>
             <input type="text" name="notes" placeholder="Notes" />
             <input class='check' type="checkbox"><p>What membrane material was used during the transfer process</p>
@@ -29,8 +29,8 @@ $(document).ready(function(){
           </fieldset>`
         } else {
           var newForm = `<fieldset>
-          <h2 class="fs-title">Questions for ${word}</h2>
-          <h3 class="fs-subtitle">This is step 1</h3>
+          <h2 class="fs-title">Questions for ${word.toLowerCase()}</h2>
+
           <input class='check' type="checkbox"><p>Please document the exact plating procedure</p>
           <input type="text" name="notes" placeholder="Notes" />
           <input class='check' type="checkbox"><p>What membrane material was used during the transfer process</p>
