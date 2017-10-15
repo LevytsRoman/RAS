@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css" media="screen" title="no title">
+    <title></title>
+  </head>
+  <body>
+    <form class="my_form" action="/api_call" method="post">
+      <input type="text" name="name" placeholder="https://example.org/some_more_link/stuff">
+      <button class='urlSubmission' type='submit'>Submit</button>
+    </form>
+    <!-- multistep form -->
+    <form id="msform">
+      <!-- progressbar -->
+      <ul id="progressbar">
+
+      </ul>
+      <!-- fieldsets -->
+      <input type="button" name="submit" class="submit action-button" value="Submit" />
+    </form>
+    <!-- /.MultiStep Form -->
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./form.js"></script>
+
+  </body>
+</html>
