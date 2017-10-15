@@ -45,8 +45,8 @@ app.post('/api_call', function(req, res){
    request(options, function (error, response, body) {
      if (error) throw new Error(error);
 
-     let keyWords = ['cancer', 'ras', 'liver', 'enzyme', 'stuff', 'drugs']
-     let includedWords = keyWords.filter( word => body.includes(word))
+     let keyWords = ['immunofluorescence','western blot','starvation','stimulation', 'immunoprecipitation','treatment', 'sirna knockdown']
+     let includedWords = keyWords.filter( word => body.toLowerCase().includes(word.toLowerCase()))
 
      res.json({words: includedWords})
    });
