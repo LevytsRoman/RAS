@@ -9,21 +9,40 @@ html {
 	/*Image only BG fallback*/
 
 	/*background = gradient + image pattern combo*/
-	background:
-		linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+	background: url('./background.jpg');
+	background-size: cover;
+		/*linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));*/
+}
+
+.my_form {
+	margin-top: 300px !important;
 }
 
 body {
 	font-family: montserrat, arial, verdana;
 }
 /*form styles*/
-#msform {
-	width: 400px;
+#msform, .my_form {
+	width: 800px;
 	margin: 50px auto;
 	text-align: center;
 	position: relative;
 }
-#msform fieldset {
+#msform p {
+	display: inline-block;
+	width: 70%;
+	font-family: montserrat, arial, verdana;
+	font-weight: 200;
+	font-size: 1em;
+	color: grey;
+}
+
+#msform .check {
+	display: inline-block;
+	width: 25%;
+}
+
+fieldset {
 	background: white;
 	border: 0 none;
 	border-radius: 3px;
@@ -41,7 +60,7 @@ body {
 	display: none;
 }
 /*inputs*/
-#msform input, #msform textarea {
+input, textarea {
 	padding: 15px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
@@ -53,7 +72,7 @@ body {
 	font-size: 13px;
 }
 /*buttons*/
-#msform .action-button {
+.action-button {
 	width: 100px;
 	background: #27AE60;
 	font-weight: bold;
@@ -64,7 +83,7 @@ body {
 	padding: 10px 5px;
 	margin: 10px 5px;
 }
-#msform .action-button:hover, #msform .action-button:focus {
+.action-button:hover, .action-button:focus {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
 /*headings*/

@@ -7,12 +7,12 @@ var animating; //flag to prevent quick multi-click glitches
 $("#msform").on('click', '.next', function(){
 	if(animating) return false;
 	animating = true;
-
+	// debugger
 	current_fs = $(this).parent();
 	next_fs = $(this).parent().next();
 
 	//activate next step on progressbar using the index of next_fs
-	$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+	$("#progressbar li").eq($("#msform fieldset").index(next_fs)).addClass("active");
 
 	//show the next fieldset
 	next_fs.show();
@@ -82,5 +82,7 @@ $("#msform").on('click', '.submit', function(){
     type: 'POST',
     url: '/send_email',
     data: {email: 'rcw278@nyu.edu'}
-  })
+  }).done(function(res){
+		$('#msform').html('<fieldset><br><br><p>Thank you for submission! Check your email</p><br><br></fieldset>')
+	})
 })
