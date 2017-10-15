@@ -15,13 +15,14 @@ $(document).ready(function(){
           var newForm = `<fieldset>
           <h2 class="fs-title">Questions for ${word}</h2>
           <h3 class="fs-subtitle">This is step 1</h3>
-            <input class='check' type="checkbox"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            <input class='check' type="checkbox"><p>Please document the exact plating procedure</p>
             <input type="text" name="notes" placeholder="Notes" />
-            <input class='check' type="checkbox"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            <input class='check' type="checkbox"><p>What membrane material was used during the transfer process</p>
             <input type="text" name="notes" placeholder="Notes" />
-            <input class='check' type="checkbox"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            <input class='check' type="checkbox"><p>Detail the precise application of siRNA for the knockdown</p>
             <input type="text" name="notes" placeholder="Notes" />
-            <input class='check' type="checkbox"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            <br>
+            Additional notes:
             <input type="text" name="notes" placeholder="Notes" />
             <input type="button" name="previous" class="previous action-button" value="Previous" />
             <input type="button" name="submit" class="submit action-button" value="Submit" />
@@ -30,14 +31,13 @@ $(document).ready(function(){
           var newForm = `<fieldset>
           <h2 class="fs-title">Questions for ${word}</h2>
           <h3 class="fs-subtitle">This is step 1</h3>
-          <input class='check' type="checkbox"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+          <input class='check' type="checkbox"><p>Please document the exact plating procedure</p>
           <input type="text" name="notes" placeholder="Notes" />
-          <input class='check' type="checkbox"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+          <input class='check' type="checkbox"><p>What membrane material was used during the transfer process</p>
           <input type="text" name="notes" placeholder="Notes" />
-          <input class='check' type="checkbox"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-          <input type="text" name="notes" placeholder="Notes" />
-          <input class='check' type="checkbox"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-          <input type="text" name="notes" placeholder="Notes" />
+          <input class='check' type="checkbox"><p>Detail the precise application of siRNA for the knockdown</p>
+          <br>
+          Additional notes:<input type="text" name="notes" placeholder="Notes" />
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
           </fieldset>`
